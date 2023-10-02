@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*** CSS for navbar-left **/
+.navbar{
+    display: flex;
+    background-color: rgb(22, 18, 18);
+    /* max-width: 80%;
+    margin: auto; */
+}
+.navlist{
+    width: 40%;
+    color: aliceblue;
+    display: flex;
+    list-style: none;
+}
+.logo{
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo-img{
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+    /* background-color: black; */
+    /* list-style: none; */
+}
+
+li.brand-name{
+    font-family: 'Arial Narrow';
+    display: flex;
+    align-items: center;
+}
+a#music {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+a#music:hover{
+    color: grey;
+}
+li.favr{
+    font-family: 'Arial Narrow';
+    display: flex;
+    align-items: center;
+}
+a#fav{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+}
+a#fav:hover{
+    color: grey;
+}
+
+/*** CSS for navbar-right **/
+.right-navbar{
+    width: 60%;
+    color: aliceblue;
+    display: flex;
+    justify-content: right;
+}
+.profile{
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+.profile-img{
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.profile-img:hover{
+    opacity: 0.7;
+}
+
+.notification{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/****** Main CSS Style ***/
+.main{
+    height: 100vh;
+    background-color: black;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial; 
+    /* margin: auto; */
+}
+.main-container{
+    /* background-color: rgb(245, 220, 234); */
+    width: 75%;
+    display: flex;
+    justify-content: cwnter;
+    flex-direction: column;
+
+}
+.main-container.carousel{
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    align-self: center;
+    justify-content: center;
+}
+ 
+  /* common-box-shadow-forall-div */
+  #carousel>div{
+    box-shadow: 0 0 5px 2px rgb(255, 64, 30) ;
+  } 
+  
+  /* filter the image by grayscale */
+  .gray{
+    filter: grayscale(100);
+  }
+  
+  /* styling-first-image */
+  #img1{
+    width: 20vw;;
+    top: 8vh;
+    height: 20vh;
+    /* background-image: url("https://cdn.quotesgram.com/img/20/41/1232688716-facebook-cover-photos-music-quotes-i18.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+  #img1:hover{
+    filter: none;
+    z-index: 1;
+    height: 30vh;
+    width: 40vw;
+    top:2vh;
+    box-shadow: 0 0 20px 4px rgb(3, 92, 104) ;
+    transition: all linear 0.1s ;
+  }
+  #img1:hover ~ #img2{
+    filter: grayscale(100%);
+    z-index:0;
+    box-shadow: 0 0 20px 4px rgb(247, 52, 4) ;
+    transition: all linear 0.1s ;
+  }
+  
+  /* styling-second-image */
+  #img2{
+    z-index: 1;
+    height: 24vh;
+    width: 3vw;
+    /* background-image: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+  #img2:hover{
+    filter: none;
+    height: 30vh;
+    width: 40vw;
+    top: 2vh;
+    z-index: 1;
+    box-shadow: 0 0 20px 4px rgb(247, 52, 4);
+    transition: linear 0.1s all;
+  }
+  
+  /* styling-third-image */
+  #img3{
+    width:20vw;
+    background-position: center;
+    /* background-image: url("https://images.pexels.com/photos/1482476/pexels-photo-1482476.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"); */
+    background-size:cover;
+    height: 20vh;
+    top: 8vh;
+    left: 40vw;
+    background-color: black;
+  }
+    
+  #img3:hover{
+    filter: none;
+    z-index: 1;
+    height: 30vh;
+    width: 40vw;
+    box-shadow: 0 0 20px 4px dodgerblue;
+    transition: linear 0.1s all;
+  } 
+  
+  #img3:hover ~ #img2{
+    filter: grayscale(100%);
+    z-index:0;
+    box-shadow: 0 0 20px 4px rgb(247, 52, 4);
+    transition: all linear 0.1s ;
+  }
+  
+
+
+
+.sidebar{
+    /* background-color: blue; */
+    width: 25%;
+    display:flex;
+    justify-content: center;
+    font-family:;
+}
